@@ -3,9 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-image: url("basca.jpeg");
-    
-    background-size: 1000px 500px;
+    background-image: url("espao.jpeg");
 }
 
  header {
@@ -13,8 +11,8 @@ body {
     color: white;
     text-align: center;
     padding: 100px 0;
-    
-
+    background-image: margin 0px
+  
 }
 
 header h1 {
@@ -35,7 +33,7 @@ nav ul {
 }
 
 nav li {
-    margin: 10 20px;
+    margin: 0 20px;
 }
 
 nav a {
@@ -55,7 +53,7 @@ nav a:hover {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-right: 50px;
+    margin-right: 20px;
     text-align: center;
 }
 
