@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keppe Shoes - Produtos</title>
+    <link rel="stylesheet" href="produtos.css"> <!-- Adicione o link para seu arquivo de estilo, se aplicável -->
+</head>
+
+<body>
+    <header>
+        <h1>Keppe Shoes</h1>
+        <nav>
+            <ul>
+                <li><a href="telainicial.html">Tela Inicial</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carrinho.html">Carrinho</a>
+            </ul>
+            <button class="botao-voltar" onclick="voltar()">Voltar</button>
+        <script>
+            function voltar() {
+                window.history.back();
+            }
+        </script>
+        </nav>
+        
+
+    <form action="/pesquisar" method="GET">
+        
+        <div id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar...">
+            <button id="btnBusca" onclick="realizarBusca()">Buscar</button>
+        </div>
+        <script>
+            function realizarBusca() {
+                var termoBusca = document.getElementById("txtBusca").value;
+                alert("Realizar busca com termo: " + termoBusca);
+                // Adicione aqui a lógica para processar a busca
+            }
+        </script>
+        
+    </form>
+    </header>
+
+    
+    <main>
+
+        <ul class="produtos">
+            <div class="produto">
+                <h2>Tênis Masculino Adidas Harden Stepback 3</h2>
+                <img src="harden.jpeg" alt="Tênis 1">
+                <p>Projetado para oferecer suporte e conforto superiores em quadra. Disponível em várias cores.</p>
+                <p class="preco">R$499,99</p>
+                <a href="hardendetalhado.html" class="ver-melhor">Ver Melhor</a>
+                <button>Adicionar ao Carrinho</button>
+                <div id="carrinho">
+                    <h2>Carrinho</h2>
+                    <ul id="itens-carrinho"></ul>
+                </div>
+                <script src="carrinho.js"></script></div>
+            </div>
+                
+            <div class="produto">
+                <h2>Tênis Masculino Puma Lamello Ball<p> MB.03 Ediçao Rick and Morty</p></h2>
+                <img src="lamello.jpeg" alt="Tênis 2">
+                <p>Ideal para jogadores que buscam máximo amortecimento e aderência. Edição limitada.</p>
+                <p class="preco">R$749,99</p>
+                <a href="lamellodatalhado.html" class="ver-melhor">Ver Melhor</a>
+                <button>Adicionar ao Carrinho</button>
+                <div id="carrinho">
+            <h2>Carrinho</h2>
+            <ul id="itens-carrinho"></ul>
+        </div>
+        <script src="carrinho.js"></script></div>
+            </div>
+            
+            
+        </ul>
+
+        
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Keppe Shoes. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.produto {
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.produto h2 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.produto p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.produto .preco {
+    color: #e44d26;
+    font-weight: bold;
+}
+
+.botao-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Estilo específico para um produto aberto */
+.produto.aberto {
+    background-color: #f8f8f8; /* Cor de fundo diferente para produtos abertos */
+    border: 2px solid #333; /* Borda mais destacada para produtos abertos */
+}
