@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="lamellodetalhado.css">
+    <title>Keppe Shoes - Produto Detalhado</title>
+    
+      <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        #product-images {
+            display: flex;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .image-container {
+            flex: 0 0 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position:absolute;
+            top: 100%;
+            width: auto;
+            padding: 16px;
+            margin-top: 22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Keppe Shoes</h1>
+        <nav>
+            <ul>
+                <li><a href="telainicial.html">Tela Inicial</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="botao-voltar" onclick="voltar()">Voltar</button>
+        <script>
+            function voltar() {
+                window.history.back();
+            }
+        </script>
+    </header>
+
+    <main>
+        <div class="produto">
+            <h2>Tênis Masculino Puma Lamello Ball<p> MB.02 Ediçao Rick and Morty</p></h2>
+            <img src="lamello.jpeg" alt="Tênis 2">
+            <p>Ideal para jogadores que buscam máximo amortecimento e aderência. Edição limitada.</p>
+            <p class="preco">R$749,99</p>
+            <button>Adicionar ao Carrinho</button>
+            <a href="lamellodetalhado.css" class="ver-melhor">Ver Melhor</a>
+            <div id="carrinho">
+                <h2>Carrinho</h2>
+                <ul id="itens-carrinho"></ul>
+                <button class="botao-comprar" onclick="finalizarCompra()">Comprar</button>
+                <div class="main-content">
+            <div id="product-images">
+                <div class="image-container">
+                    <img src="lamello 2.jpeg" alt="Imagem 1">
+                </div>
+                <div class="image-container">
+                    <img src="lamello3.jpeg" alt="Imagem 2">
+                </div>
+                <div class="product-container">
+                    <div class="product-details">
+                        <!-- Conteúdo do produto, como imagem, título, etc. -->
+                    </div>
+                    <div class="specifications">
+                        <!-- Especificações do produto -->
+                    </div>
+                </div>
+                <section class="product-container">
+                    <article class="product-details">
+                        <!-- Conteúdo do produto, como imagem, título, etc. -->
+                    </article>
+                    <aside class="specifications">
+                        <!-- Especificações do produto -->
+                    </aside>
+                </section>
+                <table class="product-details">
+    
+                    
+                <!-- Conteúdo do produto -->
+                </table>
+                <table class="specifications">
+                    <!-- Especificações do produto -->
+                </table>
+            </div>
+        </main>
+        
+           
+    </div>
+
+    <div class="prev" onclick="changeImage(-1)">❮</div>
+    <div class="next" onclick="changeImage(1)">❯</div>
+    <script src="carrosel.js"></script>
+</div>
+        <script src="compra.js"></script>
+        <div>
+            <button onclick="adicionarAoCarrinho('Tênis Masculino Puma Lamello Ball MB.03 Edição Rick and Morty', 749.99)">Adicionar ao Carrinho</button>
+
+
+        <div id="carrinho">
+            <h2>Carrinho</h2>
+            <ul id="itens-carrinho"></ul>
+        </div>
+        <script src="carrinho.js"></script>
+        <!-- Outros produtos aqui -->
+
+    </main>
+    <section class="product-details">
+        <h2>Especificações</h2>
+        <ul>
+            <li><strong>Marca:</strong> Puma</li>
+            <li><strong>Modelo:</strong> Mb02</li>
+            <li><strong>Cor:</strong> Verde e Azul</li>
+            <li><strong>Tamanho:</strong> Disponível em 38-45</li>
+            <li><strong>Material:</strong> Couro sintético e malha</li>
+            <li><strong>Sola:</strong> Borracha</li>
+            <li><strong>Tecnologia:</strong> Amortecimento</li>
+            
+
+<!-- Adicione mais especificações conforme necessário -->
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+
+        <!-- Adicione mais produtos conforme necessário -->
+    </main>
+        </div>
+
+        <!-- Adicione mais produtos conforme necessário -->
+    </main>
+    <footer>
+        <p>&copy; 2023 Keppe Shoes. Arthur Keppe Vieira</p>
+    </footer>
+</body>
+
+</html>
